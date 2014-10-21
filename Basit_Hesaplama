@@ -1,5 +1,5 @@
 // İki işlemleri yapmak için basit bir hesaplama programi.
-//styling duzenlendi. Indent ler duzensizdi.
+//styling duzenlendi. Indentler duzensizdi.
 
 #include<stdio.h>
 int main(){
