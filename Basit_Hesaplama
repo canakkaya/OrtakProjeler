@@ -1,0 +1,42 @@
+// İki işlemleri yapmak için basit bir hesaplama programi.
+
+#include<stdio.h>
+int main(){
+	
+    int SAYI_1;
+	int SAYI_2;
+	int Islem_Simgesi;   // a,b,c olarak adlandirmaktansa. Programdaki gorevleri/konumlariyla adlandirdim.
+	
+	printf("Yapmak istediginiz islem tipini seciniz> ");
+	scanf("%c",&Islem_Simgesi);
+	
+	printf("Lutfen birinci sayiyi giriniz> ");
+	scanf("%d",&SAYI_1);
+	
+	printf("Lutfen ikinci sayiyi giriniz> ");
+	scanf("%d",&SAYI_2);    //Kullanicinin hesaplamak istedigi islem tipi ve sayilarin girilmesi icin ciktilar. 
+	
+	switch(Islem_Simgesi){
+		
+	    case '+':
+		printf("%d %c %d = %d\n",SAYI_1,Islem_Simgesi,SAYI_2,SAYI_1+SAYI_2);
+		break;     // toplama islemi istenirse, istenilen iki sayi arasindaki toplama islemini yazdik.
+		
+        case '-':
+		printf("%d %c %d = %d\n",SAYI_1,Islem_Simgesi,SAYI_2,SAYI_1-SAYI_2);
+		break;   // cikarma islemi istenirse, istenilen iki sayi arasindaki cikarma islemini yazdik.
+		
+		case '*':
+		printf("%d %c %d = %d\n",SAYI_1,Islem_Simgesi,SAYI_2,SAYI_1*SAYI_2);
+		break; // carpma islemi istenirse, istenilen iki sayi arasindaki carpma islemini yazdik.
+		
+		case '/':
+		printf("%d %c %d = %.2f\n",SAYI_1,Islem_Simgesi,SAYI_2,(float)SAYI_1/SAYI_2);
+		break; // bolme islemi istenirse, istenilen iki sayi arasindaki bolme islemini yazdik.
+		
+		default:
+		printf("HATA: Tanimsiz bir operator girdin! Dikkat et!\n");
+	}
+	
+	return 0;
+}
