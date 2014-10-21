@@ -1,14 +1,15 @@
 // İki işlemleri yapmak için basit bir hesaplama programi.
+//styling duzenlendi. Indent ler duzensizdi.
 
 #include<stdio.h>
 int main(){
 	
     int SAYI_1;
-	int SAYI_2;
-	int Islem_Simgesi;   // a,b,c olarak adlandirmaktansa. Programdaki gorevleri/konumlariyla adlandirdim.
+    int SAYI_2;
+    int Islem_Simgesi;   // a,b,c olarak adlandirmaktansa. Programdaki gorevleri/konumlariyla adlandirdim.
 	
-	printf("Yapmak istediginiz islem tipini seciniz> ");
-	scanf("%c",&Islem_Simgesi);
+    printf("Yapmak istediginiz islem tipini seciniz> ");
+    scanf("%c",&Islem_Simgesi);
 	
 	printf("Lutfen birinci sayiyi giriniz> ");
 	scanf("%d",&SAYI_1);
