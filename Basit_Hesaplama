@@ -8,7 +8,7 @@ int main(){
     int Islem_Simgesi;   // a,b,c olarak adlandirmaktansa. Programdaki gorevleri/konumlariyla adlandirdim.
 	
     printf("Yapmak istediginiz islem tipini seciniz> ");
-    scanf("%c",&Islem_Simgesi);
+    scanf("%c",&Islem_Simgesi); // %c karakter icin kulanilir. islem operatorleri karakterle belirtilir.
 	
 	printf("Lutfen birinci sayiyi giriniz> ");
 	scanf("%d",&SAYI_1);
